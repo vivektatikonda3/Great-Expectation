@@ -7,7 +7,7 @@ phases:
     commands:
       - echo Installing dependencies
       - pip install --upgrade pip
-      - pip install wheel  # Ensure wheel package is installed
+      - pip install wheel twine  # Ensure wheel and twine packages are installed
       - pip install -r requirements-dev.txt
   build:
     commands:
