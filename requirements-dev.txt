@@ -1,0 +1,12 @@
+# Great Expectations library
+great_expectations==0.18.18
+
+# Other development dependencies
+boto3==1.26.142
+great-expectations-experimental==0.1.20230803013
+great-expectations==0.17.9
+pymysql==1.0.2
+pyspark==3.3.2
+pyyaml==6.0
+slack-sdk==3.19.3
+sqlalchemy==1.4.39

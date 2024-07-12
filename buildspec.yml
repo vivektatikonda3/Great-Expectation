@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:
+      - pip install -r requirements-dev.txt
+  build:
+    commands:
+      - python setup.py sdist bdist_wheel
+  post_build:
+    commands:
+      - aws s3 cp dist/ s3://vivek-gx-buck/great_expectations_custom/ --recursive
+      - aws codeartifact login --tool twine --repository gxrep --domain gx --domain-owner 905418203341
+      - twine upload --repository codeartifact dist/*
