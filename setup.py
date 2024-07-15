@@ -14,8 +14,8 @@ setup(
         'sqlalchemy==1.4.39',
     ],
     author='Vivek',
-    author_email='your.email@example.com',
-    description='Description of your package',
+    author_email='Vivektatikonda3@gmail.com',
+    description='Custom Great Expecation Package',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/vivektatikonda3/Great-Expectation',  # Replace with your repository URL
